@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "now-build": "next build && next export -o dist",
+    "deploy": "yarn now-build && now && now alias",
     "prettier": "prettier --write '**/*.js{x,}'"
   },
   "dependencies": {
